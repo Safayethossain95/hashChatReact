@@ -1,38 +1,271 @@
-.App {
+/* body{
+  overflow-y: hidden;
+} */
+* {
+  box-sizing: border-box;
+}
+html,body{margin:0;padding:0;}
+h1,p{margin:0 0 1em}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+}
+ul,ol{
+  list-style: none;
+}
+
+.leftbox{
+  
+  margin-left: auto;
+  width:390px;
+  
+
+}
+.boxheight{
+  height: calc(100vh - 3px);
+}
+.css-1wc848c-MuiFormHelperText-root {
+	color: red!important;
+	
+	font-size: 12px;
+	
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 10px 13px;
   text-align: center;
+  cursor: pointer;
+}
+.box p{
+  font-size: 13px;
+  margin:0;
+  
+  
+}
+.box img{
+  width: 30px;
+
 }
 
-.App-logo {
-  height: 40vmin;
+.leftbox.leftbox-login .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: -5px;
+  left: 0;
+  margin: 0;
+  padding: 0 8px;
   pointer-events: none;
+  border-radius: inherit;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  min-width: 0%;
+  border-color: rgba(0, 0, 0, 0.23);
+  border: none;
+  border-bottom: 1px solid #aaa;
+  border-radius: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftbox.leftbox-login a,.leftbox a{
+  color:rgb(51, 122, 204);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
+.oneline{
+  font-size: 13px;
+  color:#fff;
+  text-transform: uppercase;
+}
+.eye{
+  position:relative;
+}
+.eyeicon {
+  position: absolute;
+  top: 49px;
+  right: 20px;
+  font-size: 20px;
+  color: #aaa;
+}
+.sidebarleft{
+  background: rgb(51, 122, 204);
+  height:96vh;
+  width:70%;
+  text-align: center;
+  margin: 10px;
+  border-radius: 30px;
+}
+.profilepic{
+  margin-top: 35px;
+  width:100px;
+  height:100px;
+  border-radius:50%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.iconsidebar{
+  margin:20px 0;
+  color:#fff;
+  font-size: 35px;
+}
+.sidebaricons ul li{
+  /* margin-left: -27px; */
+  width:100%;
+}
+.sidebaricons ul{
+  padding:0;
+  padding-left: 25px;
+}
+.activemenu{
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+.sidebaricons ul li svg{
+  margin-left: -27px;
+}
+.sidebaricons ul li{
+  position:relative;
+}
+.sidebaricons ul li::after{
+  position: absolute;
+  content:'';
+  top:0;
+  right: 0;
+  width:8px;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color:rgb(51, 122, 204) ;
+}
+.activemenu svg{
+  color:rgb(51, 122, 204);
+  
+}
+.displayName{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color:#fff;
+  cursor: pointer;
+}
+.profileModal{
+  height:400px;
+  background-color: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height:100vh;
+  
+}
+.profilemodalbox{
+  position:relative;
+  background-color: #fff;
+  padding: 25px;
+}
+.modalCloseIcon{
+  position: absolute;
+  top:20px;
+  right:20px;
+  font-size: 25px;
+  color:#000;
+  cursor: pointer;
+}
+.secondColumn{
+  margin-top:20px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchbarinput{
+  width:100%;
+  -webkit-box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  border-radius: 20px!important;
+	border:0!important;
+  padding:10px 0px 10px 40px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchbarmain{
+  position: relative;
+}
+.searchicon{
+  position: absolute;
+  top:50%;
+  left:10px;
+  transform:translateY(-50%);
+}
+.groupimg{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+}
+.groupreqitem{
+  display: flex;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.groupitemwrapper{
+  padding:10px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  box-shadow: -1px 7px 34px -10px rgba(0,0,0,0.75);
+  height:35.5vh;
+  overflow-y: scroll; 
+}
+.gname{
+  
+  position: relative;
+}
+.innergname{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:20px;
+ 
+}
+.gimg{
+  width:30%;
+}
+.gname{
+  width:50%;
+}
+.gname h3{
+  margin:0;
+}
+.gbutton{
+  position: relative;
+  width:40%;
+}
+.gbutton button {
+	padding: 10px 25px;
+	background: rgb(51, 122, 204);
+	color: #000;
+	position: absolute;
+	top: 26px;	
+	left: 20px;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+
+}
+.userList .gbutton button {
+	padding: 0px 18px;
+	background: rgb(51, 122, 204);
+	color: #000;
+	position: absolute;
+	top: 19px;
+	left: 20px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+}
+.friendsmain .groupitemwrapper{
+  height: 87vh;
+}
+.userplusbutton{
+  font-size: 32px;
+  font-weight: 700;
 }
