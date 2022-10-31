@@ -16,15 +16,16 @@ import UserList from '../components/UserList';
 const Home = () => {
   const auth = getAuth()
   const navigate = useNavigate()
-  const [emailVerify,setEmailVerify] = useState(true)
+  const [emailVerify,setEmailVerify] = useState(false)
   useEffect(()=>{
-    // onAuthStateChanged(auth, (user) => {
-    //   if (user) {
-    //     setEmailVerify(user.emailVerified)
-    //   } else {
-    //     navigate('/login')
-    //   }
-    // });
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // user.emailVerified
+        setEmailVerify(true)
+      } else {
+        navigate('/login')
+      }
+    });
   },[])
   return (
     <>

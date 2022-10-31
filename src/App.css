@@ -6,14 +6,35 @@
 }
 html,body{margin:0;padding:0;}
 h1,p{margin:0 0 1em}
-
+p{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
 h1{
   font-family: 'Poppins', sans-serif;
 }
 ul,ol{
   list-style: none;
 }
+.switch {
+	position: absolute;
+	top: 19px;
+	left: 34px;
+}
+.dark{
+  background: #000;
+}
+.dark h3,.dark p,.dark h2{
+  color:#fff!important;
+}
+.dark .groupitemwrapper {
 
+	box-shadow: -1px 7px 34px -10px rgba(196, 194, 194, 0.603);
+
+}
+.light{
+  background-color: #fff;
+}
 .leftbox{
   
   margin-left: auto;
@@ -152,7 +173,7 @@ ul,ol{
 }
 .profileModal{
   height:400px;
-  background-color: #fff;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,6 +192,17 @@ ul,ol{
   font-size: 25px;
   color:#000;
   cursor: pointer;
+}
+.profilemodalbox ul{
+  padding:0;
+}
+.profilemodalbox ul li{
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+.profilemodalbox ul li span{
+  font-weight: 700;
+  color:rgb(51, 122, 204);
 }
 .secondColumn{
   margin-top:20px;
@@ -197,8 +229,8 @@ ul,ol{
   transform:translateY(-50%);
 }
 .groupimg{
-  width:100px;
-  height:100px;
+  width:100%;
+  
   border-radius: 50%;
 }
 .groupreqitem{
@@ -216,6 +248,7 @@ ul,ol{
   height:35.5vh;
   overflow-y: scroll; 
 }
+
 .gname{
   
   position: relative;
@@ -238,34 +271,38 @@ ul,ol{
 }
 .gbutton{
   position: relative;
-  width:40%;
+  width:20%;
+  display: flex;
+  align-items: center;
 }
 .gbutton button {
-	padding: 10px 25px;
-	background: rgb(51, 122, 204);
-	color: #000;
-	position: absolute;
-	top: 26px;	
-	left: 20px;
-  color:#fff;
+  /* padding: 10px 25px; */
+  background: rgb(51, 122, 204);
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  color: #fff;
   font-family: 'Poppins', sans-serif;
-
 }
 .userList .gbutton button {
 	padding: 0px 18px;
 	background: rgb(51, 122, 204);
 	color: #000;
 	position: absolute;
-	top: 19px;
-	left: 20px;
+	top: 50%;
+	left: 10px;
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	transform: translateY(-50%);
 }
 .friendsmain .groupitemwrapper{
   height: 87vh;
 }
 .userplusbutton{
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
 }
